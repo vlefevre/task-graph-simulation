@@ -21,6 +21,7 @@ where Task is the name of Task (can be anything except pure integers), W is the 
 Finally, one line for each processor of the form:
 i,task1,task2,...,taskn
 where i is the number of the processor, and task1 to taskn the names of the tasks mapped on it. The order is important as it represents the list scheduling.
+Input.csv must have a special format too: [Name]_[NbTasks]_numP[NbProcs]_lam[ErrorRate]_[anything].csv
 
 ckpt_strategy is the choice of the strategy: ckpt_s1, ckpt_s2, ckpt_all or ckpt_none (as defined in the input file). every is also an acceptable keyword and runs the 4 strategies, while almost runs everything except ckpt_none (for time concerns).
 
